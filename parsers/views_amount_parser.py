@@ -60,3 +60,9 @@ class GetUrlViewsAmount():
 
         if self.url_netloc == 'youtube.com':
             return self.get_views_amount_with_multiple_retries(self.get_youtube_views_amount)
+
+
+
+
+views_amount = GetUrlViewsAmount('https://vimeo.com/91371852', 'vimeo.com').execute()
+print(views_amount)
